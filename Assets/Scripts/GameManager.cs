@@ -15,8 +15,7 @@ public class GameManager : MonoBehaviour
   //public void Awake()
   //{
   //  // Create a new command called 'camera_look', which looks at a target. 
-  //  // Note how we're listing 'GameObject' as the parameter type.
-  //  dialogueRunner.AddCommandHandler<GameObject>(
+  //  dialogueRunner.AddCommandHandler(
   //      "update_values",     // the name of the command
   //      updateValues // the method to run
   //  );
@@ -34,6 +33,7 @@ public class GameManager : MonoBehaviour
     if (day == 5)
     {
       // Update the status values
+
     }
   }
 
@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     if (dangerSlider.GetMeter() == 0)
     {
       // Game over scene
+
     }
   }
 }
