@@ -7,6 +7,7 @@ Amy: Boss, I’m trying my best. I worked overtime yesterday. I’m not in the b
 Do you want to help?
 -> No
   You: Amy, you’re not working hard enough, you got to up your game!
+  <<$update_values to (1,2)>>
 -> Yes
   You: No boss, I’ve seen Amy worked her ass off for you! You should be grateful to have a hard worker like her!
 ===
