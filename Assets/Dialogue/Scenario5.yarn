@@ -1,5 +1,12 @@
-﻿title: Scenario5
+﻿title: Scenario5.Start
 tags:
 ---
-
+BOSS: Joe, what did you do?! I told you to add these numbers up, why did you subtract them?
+YOU: BOSS, you told me to add them up! Do you want me to show you the email?
+BOSS: How dare you talk back to me?! 
+Do you want defend yourself?
+->Yes
+  That's the truth. I was following your instructions all this time, but you kept on changing ideas last minute.
+->No
+  I’m sorry, boss, I won’t make this mistake again. Please don’t fire me!
 ===

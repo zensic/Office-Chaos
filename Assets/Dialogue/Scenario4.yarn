@@ -1,5 +1,13 @@
-﻿title: Senario4
+﻿title: Senario4.Start
 tags:
 ---
-
+BOSS: We need to have this report done by the end of the day.
+YOU: That's not possible. I've only got two hours left.
+BOSS: Then you'll have to work through the night.
+YOU: That's not possible either. I've got other commitments.
+BOSS: Well, you'll have to find a way to make it work.
+->Yes
+  Boss, I’ll complete my work...
+->No
+  I don’t care, I’ll leave at six, you gave me too much work!
 ===
