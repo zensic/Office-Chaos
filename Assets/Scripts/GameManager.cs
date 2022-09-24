@@ -9,15 +9,15 @@ public class GameManager : MonoBehaviour
   public ValueMeter cowardSlider;
   public ValueMeter dangerSlider;
 
-  [YarnCommand("updateValues")]
-  void updateValues(int day, int cowardPts, int dangerPts)
+  [YarnCommand("update_values")]
+  public void updateValues(int cowardPts, int dangerPts)
   {
     day++;
     cowardSlider.SetMeter(cowardSlider.GetMeter() + cowardPts);
     cowardSlider.SetMeter(dangerSlider.GetMeter() + dangerPts);
   }
 
-  static void updateScene(int day)
+  public void updateScene()
   {
     if (day == 5)
     {
@@ -25,9 +25,9 @@ public class GameManager : MonoBehaviour
     }
   }
 
-  static void checkGameOver(int dangerValue)
+  public void checkGameOver()
   {
-    if (dangerValue == 0)
+    if (dangerSlider.GetMeter() == 0)
     {
       // Game over scene
     }

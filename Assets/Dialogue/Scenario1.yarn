@@ -2,11 +2,11 @@
 tags:
 ---
 BOSS: Look at you, you’re such a slow worker. STOP being a lazy ass!
-CO-A: Boss, I’m trying my best. I worked overtime yesterday. I’m not in the best state today.
+Amy: Boss, I’m trying my best. I worked overtime yesterday. I’m not in the best state today.
 
 Do you want to help?
 -> No
-  You: CO-A, you’re not working hard enough, you got to up your game!
--> Yes 
-  You: No boss, I’ve seen CO-A worked his ass off for you! You should be grateful to have a hard worker like him!
+  You: Amy, you’re not working hard enough, you got to up your game!
+-> Yes
+  You: No boss, I’ve seen Amy worked her ass off for you! You should be grateful to have a hard worker like her!
 ===

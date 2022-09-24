@@ -1,0 +1,13 @@
+﻿title: Scenario3.Start
+tags:
+---
+Christopher: Hey, have you heard about the story of Benjamin?
+Amy: No, what about it?
+Christopher: I saw Benjamin holding hands with BOSS at the park. They’re having an affair! Joe, don’t you think Benjamin was a bit too close with BOSS?
+
+Do you think they are having an affair?
+->Yes
+  True, I DEFINITELY saw them hold hands at the park!
+->No
+  It’s none of my business, I’ll get back to work.
+===

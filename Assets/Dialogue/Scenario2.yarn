@@ -1,0 +1,10 @@
+﻿title: Scenario2.Start
+tags:
+---
+Amy: Ah…. Sorry, I’m late… There’s… there’s a traffic jam…
+Do you want to report to BOSS?
+->Yes
+  Amy is always late!!! Please check her timesheet!
+->No
+  Good morning! Have a nice day!
+===
