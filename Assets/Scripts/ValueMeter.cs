@@ -7,6 +7,11 @@ public class ValueMeter : MonoBehaviour
 {
   public Slider slider;
 
+  public int GetMeter()
+  {
+    return (int)slider.value;
+  }
+
   public void SetMeter (int meter)
   {
     slider.value = meter;
