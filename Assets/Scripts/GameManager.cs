@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class GameManager : MonoBehaviour
   public ValueMeter cowardSlider;
   public ValueMeter dangerSlider;
 
+  [YarnCommand("updateValues")]
   void updateValues(int day, int cowardPts, int dangerPts)
   {
     day++;
