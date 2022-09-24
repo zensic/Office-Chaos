@@ -2,8 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventTrigger : MonoBehaviour
+public class CollideTrigger : MonoBehaviour
 {
+  void onTriggerEnter(Collision col)
+  {
+    Debug.Log(col);
+  }
+
   // Start is called before the first frame update
   void Start()
   {
@@ -14,10 +19,5 @@ public class EventTrigger : MonoBehaviour
   void Update()
   {
 
-  }
-
-  void onTriggerEnter2D(Collision2D col)
-  {
-    Debug.Log(col);
   }
 }
