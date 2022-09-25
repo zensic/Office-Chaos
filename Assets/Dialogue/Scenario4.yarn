@@ -7,7 +7,9 @@ BOSS: Then you'll have to work through the night.
 YOU: That's not possible either. I've got other commitments.
 BOSS: Well, you'll have to find a way to make it work.
 ->Yes
-  Boss, I’ll complete my work...
+  <<updateValues 1 -1>>
+  Boss, I will complete my work...
 ->No
+  <<updateValues -1 1>>
   I don’t care, I’ll leave at six, you gave me too much work!
 ===

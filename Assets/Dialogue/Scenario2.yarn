@@ -4,7 +4,9 @@ tags:
 Amy: Ah…. Sorry, I’m late… There’s… there’s a traffic jam…
 Do you want to report to BOSS?
 ->Yes
+  <<updateValues 1 0>>
   Amy is always late!!! Please check her timesheet!
 ->No
+  <<updateValues -1 0>>
   Good morning! Have a nice day!
 ===

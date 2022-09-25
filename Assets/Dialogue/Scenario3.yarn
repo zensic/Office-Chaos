@@ -7,7 +7,9 @@ Christopher: I saw Benjamin holding hands with BOSS at the park. They’re havin
 
 Do you think they are having an affair?
 ->Yes
+  <<updateValues 1 2>>
   True, I DEFINITELY saw them hold hands at the park!
 ->No
+  <<updateValues -1 0>>
   It’s none of my business, I’ll get back to work.
 ===
