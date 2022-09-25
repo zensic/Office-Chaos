@@ -31,16 +31,22 @@ public class GameManager : MonoBehaviour
   {
     if (day == 5)
     {
-      // Update the status values
+      // Show screen transition
 
+      // Update number of days in text
     }
   }
 
   public void checkGameOver()
   {
-    if (dangerSlider.GetMeter() == 0)
+    if (dangerSlider.GetMeter() > 4)
     {
-      // Game over scene
+      // First game over scene
+
+    }
+    else if (cowardSlider.GetMeter() > 4)
+    {
+      // Second game over scene
 
     }
   }

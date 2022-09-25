@@ -25,12 +25,24 @@ public class ScenarioTrigger : MonoBehaviour
     switch (scenarioIndex)
     {
       case 1:
-        // Init scenario
         dialogueRunner.StartDialogue("Scenario1.Start");
-        //
+        break;
+      case 2:
+        dialogueRunner.StartDialogue("Scenario2.Start");
+        break;
+      case 3:
+        dialogueRunner.StartDialogue("Scenario3.Start");
+        break;
+      case 4:
+        dialogueRunner.StartDialogue("Scenario4.Start");
+        break;
+      case 5:
+        dialogueRunner.StartDialogue("Scenario5.Start");
         break;
       default:
         break;
     }
+
+
   }
 }

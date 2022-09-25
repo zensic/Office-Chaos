@@ -21,13 +21,13 @@ public class PlayerMovement : MonoBehaviour
   {
     rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
-    Vector2 movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+    //Vector2 movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
-    if (movementDirection != Vector2.zero)
-    {
-      Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, movementDirection);
-      transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-    }
+    //if (movementDirection != Vector2.zero)
+    //{
+    //  Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, movementDirection);
+    //  transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+    //}
 
   }
 
