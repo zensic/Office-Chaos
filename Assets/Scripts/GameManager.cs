@@ -12,14 +12,13 @@ public class GameManager : MonoBehaviour
   public ValueMeter cowardSlider;
   public ValueMeter dangerSlider;
 
-  //public void Awake()
-  //{
-  //  // Create a new command called 'camera_look', which looks at a target. 
-  //  dialogueRunner.AddCommandHandler(
-  //      "update_values",     // the name of the command
-  //      updateValues // the method to run
-  //  );
-  //}
+  public void Awake()
+  {
+    dialogueRunner.AddCommandHandler<int, int>(
+        "updateValues",     // the name of the command
+        updateValues // the method to run
+    );
+  }
 
   public void updateValues(int cowardPts, int dangerPts)
   {
