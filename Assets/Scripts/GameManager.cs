@@ -15,8 +15,8 @@ public class GameManager : MonoBehaviour
   public void Awake()
   {
     dialogueRunner.AddCommandHandler<int, int>(
-        "updateValues",     // the name of the command
-        updateValues // the method to run
+        "updateValues",
+        updateValues
     );
   }
 
