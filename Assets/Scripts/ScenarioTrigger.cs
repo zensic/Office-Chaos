@@ -7,6 +7,7 @@ public class ScenarioTrigger : MonoBehaviour
 {
   public int scenarioIndex;
   public DialogueRunner dialogueRunner;
+  private bool started = true;
 
   // Start is called before the first frame update
   void Start()
@@ -22,27 +23,30 @@ public class ScenarioTrigger : MonoBehaviour
 
   private void OnTriggerEnter2D(Collider2D other)
   {
-    switch (scenarioIndex)
+    if (started)
     {
-      case 1:
-        dialogueRunner.StartDialogue("Scenario1.Start");
-        break;
-      case 2:
-        dialogueRunner.StartDialogue("Scenario2.Start");
-        break;
-      case 3:
-        dialogueRunner.StartDialogue("Scenario3.Start");
-        break;
-      case 4:
-        dialogueRunner.StartDialogue("Scenario4.Start");
-        break;
-      case 5:
-        dialogueRunner.StartDialogue("Scenario5.Start");
-        break;
-      default:
-        break;
+      switch (scenarioIndex)
+      {
+        case 1:
+          dialogueRunner.StartDialogue("Scenario1.Start");
+          break;
+        case 2:
+          dialogueRunner.StartDialogue("Scenario2.Start");
+          break;
+        case 3:
+          dialogueRunner.StartDialogue("Scenario3.Start");
+          break;
+        case 4:
+          dialogueRunner.StartDialogue("Scenario4.Start");
+          break;
+        case 5:
+          dialogueRunner.StartDialogue("Scenario5.Start");
+          break;
+        default:
+          break;
+      }
     }
 
-
+    started = false;
   }
 }
