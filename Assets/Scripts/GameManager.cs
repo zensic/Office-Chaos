@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
   {
     day++;
     cowardSlider.SetMeter(cowardSlider.GetMeter() + cowardPts);
-    cowardSlider.SetMeter(dangerSlider.GetMeter() + dangerPts);
+    dangerSlider.SetMeter(dangerSlider.GetMeter() + dangerPts);
   }
 
   public void updateScene()
