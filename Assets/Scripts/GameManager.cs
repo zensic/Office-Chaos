@@ -14,10 +14,7 @@ public class GameManager : MonoBehaviour
 
   public void Awake()
   {
-    dialogueRunner.AddCommandHandler<int, int>(
-        "updateValues",
-        updateValues
-    );
+    dialogueRunner.AddCommandHandler<int, int>("updateValues", updateValues);
   }
 
   public void updateValues(int cowardPts, int dangerPts)
