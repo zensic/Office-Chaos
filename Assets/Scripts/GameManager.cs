@@ -37,8 +37,6 @@ public class GameManager : MonoBehaviour
 
   public void updateScene()
   {
-    // Show screen transition
-
     // End game
     if (day > 5)
     {

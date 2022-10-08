@@ -18,8 +18,14 @@ public class PlayerMovement : MonoBehaviour
     movement.x = Input.GetAxisRaw("Horizontal");
     movement.y = Input.GetAxisRaw("Vertical");
 
+    // Reload scene
     if (Input.GetKeyDown(KeyCode.R))
       SceneManager.LoadScene("Main");
+
+    // Exit game
+    /*
+    if (Input.GetKeyDown(KeyCode.Escape))
+      */
   }
 
   void FixedUpdate()
