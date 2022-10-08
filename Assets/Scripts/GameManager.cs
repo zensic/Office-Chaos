@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
   public void updateScene()
   {
     // End game
-    if (day > 5)
+    if (day > 4)
     {
       ending3.SetActive(true);
     }

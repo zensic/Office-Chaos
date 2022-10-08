@@ -1,12 +1,13 @@
 ﻿title: Scenario2.Start
 tags:
 ---
-Amy: Ah…. Sorry, I’m late… There’s… there’s a traffic jam…
-Do you want to report to BOSS?
+Amy is late. Do you want to report to BOSS?
 ->Yes
+  You: Amy is always late!!! Please check her timesheet!
+  BOSS: I always knew she’s such a lazy person.
   <<updateValues 1 0>>
-  Amy is always late!!! Please check her timesheet!
 ->No
+  You: Good morning! Have a nice day!
+  Amy: Ah…. Sorry, I’m late… There’s… there’s a traffic jam…
   <<updateValues -1 0>>
-  Good morning! Have a nice day!
 ===

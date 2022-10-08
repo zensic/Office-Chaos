@@ -2,13 +2,15 @@
 tags:
 ---
 BOSS: Joe, what did you do?! I told you to add these numbers up, why did you subtract them?
-YOU: BOSS, you told me to add them up! Do you want me to show you the email?
+You: BOSS, you told me to add them up! Do you want me to show you the email?
 BOSS: How dare you talk back to me?! 
 Do you want defend yourself?
 ->Yes
+  You: That's the truth. I was following your orders all this time, but you kept on changing them last minute.
+  You feel great.
   <<updateValues -1 2>>
-  That's the truth. I was following your instructions all this time, but you kept on changing ideas last minute.
 ->No
+  You: I’m sorry, boss, I won’t make this mistake again. Please don’t fire me!
+  You feel unmotivated.
   <<updateValues 2 -1>>
-  I’m sorry, boss, I won’t make this mistake again. Please don’t fire me!
 ===
