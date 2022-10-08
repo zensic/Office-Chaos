@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
   public float rotationSpeed = 720;
   public Rigidbody2D rb;
 
+  public bool canMove = true;
   Vector2 movement;
 
   // Update is called once per frame
@@ -15,11 +17,15 @@ public class PlayerMovement : MonoBehaviour
   {
     movement.x = Input.GetAxisRaw("Horizontal");
     movement.y = Input.GetAxisRaw("Vertical");
+
+    if (Input.GetKeyDown(KeyCode.R))
+      SceneManager.LoadScene("Main");
   }
 
   void FixedUpdate()
   {
-    rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    if (canMove)
+      rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
     //Vector2 movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
@@ -30,5 +36,4 @@ public class PlayerMovement : MonoBehaviour
     //}
 
   }
-
 }

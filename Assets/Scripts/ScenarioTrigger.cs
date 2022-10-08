@@ -7,6 +7,8 @@ public class ScenarioTrigger : MonoBehaviour
 {
   public int scenarioIndex;
   public DialogueRunner dialogueRunner;
+  public PlayerMovement playerMovement;
+
   private bool started = true;
 
   // Start is called before the first frame update
@@ -25,6 +27,8 @@ public class ScenarioTrigger : MonoBehaviour
   {
     if (started)
     {
+      playerMovement.canMove = false;
+
       switch (scenarioIndex)
       {
         case 1:
