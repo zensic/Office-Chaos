@@ -29,6 +29,11 @@ public class GameManager : MonoBehaviour
     cowardSlider.SetMeter(cowardSlider.GetMeter() + cowardPts);
     dangerSlider.SetMeter(dangerSlider.GetMeter() + dangerPts);
 
+    if (day > 3)
+    {
+      ending3.SetActive(true);
+    }
+
     checkGameOver();
 
     // Update the day count
@@ -46,10 +51,6 @@ public class GameManager : MonoBehaviour
     {
       // Second game over scene
       ending2.SetActive(true);
-    }
-    else if (day > 3)
-    {
-      ending3.SetActive(true);
     }
     else
     {
