@@ -33,22 +33,7 @@ public class GameManager : MonoBehaviour
 
     // Update the day count
     day++;
-
-    // Check for winnning the game
-    if (day > 3)
-    {
-      ending3.SetActive(true);
-    }
   }
-
-  //public void updateScene()
-  //{
-  //  // End game
-  //  if (day > 3)
-  //  {
-  //    ending3.SetActive(true);
-  //  }
-  //}
 
   public void checkGameOver()
   {
@@ -61,6 +46,10 @@ public class GameManager : MonoBehaviour
     {
       // Second game over scene
       ending2.SetActive(true);
+    }
+    else if (day > 3)
+    {
+      ending3.SetActive(true);
     }
     else
     {
