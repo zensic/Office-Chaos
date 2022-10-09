@@ -8,6 +8,5 @@ Amy is late. Do you want to report to BOSS?
   <<updateValues 1 0>>
 ->No
   You: Good morning! Have a nice day!
-  Amy: Ah…. Sorry, I’m late… There’s… there’s a traffic jam…
   <<updateValues -1 0>>
 ===

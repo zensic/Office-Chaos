@@ -23,9 +23,9 @@ public class PlayerMovement : MonoBehaviour
       SceneManager.LoadScene("Main");
 
     // Exit game
-    /*
+
     if (Input.GetKeyDown(KeyCode.Escape))
-      */
+      Application.Quit();
   }
 
   void FixedUpdate()

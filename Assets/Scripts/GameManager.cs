@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
   public void updateValues(int cowardPts, int dangerPts)
   {
-    updateScene();
+    //updateScene();
 
     cowardSlider.SetMeter(cowardSlider.GetMeter() + cowardPts);
     dangerSlider.SetMeter(dangerSlider.GetMeter() + dangerPts);
@@ -33,16 +33,22 @@ public class GameManager : MonoBehaviour
 
     // Update the day count
     day++;
-  }
 
-  public void updateScene()
-  {
-    // End game
-    if (day > 4)
+    // Check for winnning the game
+    if (day > 3)
     {
       ending3.SetActive(true);
     }
   }
+
+  //public void updateScene()
+  //{
+  //  // End game
+  //  if (day > 3)
+  //  {
+  //    ending3.SetActive(true);
+  //  }
+  //}
 
   public void checkGameOver()
   {
